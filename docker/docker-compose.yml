@@ -1,0 +1,8 @@
+version: '3'
+services:
+  clasp-build:
+    build: .
+    container_name: 'clasp-build'
+    tty: true
+    volumes:
+      - "../src:/opt/src"
